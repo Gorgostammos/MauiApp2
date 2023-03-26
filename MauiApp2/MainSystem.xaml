@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainSystem"
+             Title="Forside">
+    <ScrollView>
+        
+
+        <VerticalStackLayout Padding="20"  Spacing="50" VerticalOptions="CenterAndExpand">
+            
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="100">
+                <Picker x:Name="Picker" 
+        Title="From">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Engelsk</x:String>
+                        <x:String>Spansk</x:String>
+                        <x:String>Fransk</x:String>
+                        <x:String>Dansk</x:String>
+                        <x:String>Norsk</x:String>
+
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="Picker1"
+        Title="to">
+
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Engelsk</x:String>
+                        <x:String>Spansk</x:String>
+                        <x:String>Fransk</x:String>
+                        <x:String>Dansk</x:String>
+                        <x:String>Norsk</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+                
+            </HorizontalStackLayout>
+
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="100">
+               
+                <Editor Placeholder="Skrive inn tekst" HorizontalOptions="Start" WidthRequest="500" HeightRequest="400" VerticalTextAlignment="Start" Margin="10" Keyboard="Numeric" />
+
+                <Editor Placeholder="Skrive inn tekst" HorizontalOptions="End"  WidthRequest="500" HeightRequest="400" VerticalTextAlignment="Start" Margin="10"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="75"  >
+                <Button Text="Done"  HorizontalOptions="Center" WidthRequest="75"/>
+            
+                
+                <Button Text="Url" x:Name="BtnUrl"  Clicked="BtnUrl_Klikk" WidthRequest="75"/>
+
+            </HorizontalStackLayout>
+
+           
+
+
+        </VerticalStackLayout>
+
+
+
+    </ScrollView>
+   
+</ContentPage>

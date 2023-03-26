@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.pageReg"
+             Title="Registrer">
+    <ScrollView>
+
+
+        <VerticalStackLayout Spacing="100">
+            <Label 
+            Text="Registrer deg her"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <VerticalStackLayout WidthRequest="300" VerticalOptions="Center" Spacing="7">
+                <Entry Placeholder="Navn" MaxLength="25" Keyboard="Text" />
+                <Entry Placeholder="Etter navn"  MaxLength="25" Keyboard="Text"/>
+                <Entry Placeholder="E-Post"  MaxLength="35" Keyboard="Email"/>
+                <Entry Placeholder="Telefon Nummer"  MaxLength="10" Keyboard="Telephone"/>
+                <Entry Placeholder="Passoed" IsPassword="True"/>
+
+                
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="50"> 
+                    <Button Text="Registrer" />
+                    <Button Text="Tilbake" />
+                </HorizontalStackLayout>
+
+            
+            </VerticalStackLayout>
+
+
+
+
+        </VerticalStackLayout>
+
+
+     </ScrollView>
+</ContentPage>
